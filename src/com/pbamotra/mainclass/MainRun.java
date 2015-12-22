@@ -2,6 +2,7 @@ package com.pbamotra.mainclass;
 
 import com.pbamotra.ctci.CheckPalindromePermutation;
 import com.pbamotra.ctci.CheckStringPermutation;
+import com.pbamotra.ctci.CheckStringRotation;
 import com.pbamotra.ctci.OneEditAway;
 import com.pbamotra.ctci.RotateMatrix;
 import com.pbamotra.ctci.StringCompress;

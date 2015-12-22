@@ -1,4 +1,4 @@
-package com.pbamotra.mainclass;
+package com.pbamotra.ctci;
 
 public class CheckStringRotation {
 
