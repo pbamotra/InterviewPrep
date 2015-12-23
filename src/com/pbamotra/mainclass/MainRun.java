@@ -12,9 +12,13 @@ import com.pbamotra.ctci.ZeroMatrix;
 import com.pbamotra.eopi.ArbitraryPrecisionInteger;
 import com.pbamotra.eopi.DeleteKey;
 import com.pbamotra.eopi.DutchFlag;
+import com.pbamotra.eopi.GenerateNextPermutation;
+import com.pbamotra.eopi.GeneratePermutations;
+import com.pbamotra.eopi.GeneratePrimes;
 import com.pbamotra.eopi.LongestContinuousSameArray;
 import com.pbamotra.eopi.RemoveDuplicates;
 import com.pbamotra.eopi.Sqrt;
+import com.pbamotra.eopi.StockProfitNTimes;
 import com.pbamotra.eopi.StockProfitOnce;
 
 public class MainRun {
@@ -68,6 +72,17 @@ public class MainRun {
 		
 		// SQRT
 		Sqrt sqrt = new Sqrt();
-		System.out.println(sqrt.calculate(3));
+		
+		// P6.8 Buy and Sell multiple
+		StockProfitNTimes spnt = new StockProfitNTimes();
+		
+		// P6.9 Generate N Prime number
+		GeneratePrimes gp = new GeneratePrimes();
+		
+		// P6.10 Generate Permutations
+		GeneratePermutations gps = new GeneratePermutations();
+		
+		// P6.11 Next Permutation
+		GenerateNextPermutation gnp = new GenerateNextPermutation();
 	}
 }
