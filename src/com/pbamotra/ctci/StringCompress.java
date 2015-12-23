@@ -4,32 +4,45 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StringCompress {
-	public String compress(String str) {
+	public static String[] compress(String[] input_strings) {
 		
-		if(str == null || str.isEmpty()) return str;
+		String[] list = new String[input_strings.length];
+		int n_cnt = 0;
 		
-		int len = str.length();
-		StringBuilder sb = new StringBuilder();
-		Map<Character, Integer> map = new HashMap<>(1);
-
-		for (int i=0; i<len; i++) {
-			if(map.get(str.charAt(i)) == null && map.isEmpty()) {
-				map.put(str.charAt(i), 1);
-			} else if (map.get(str.charAt(i)) == null && !map.isEmpty()){
-				char prev_char = (char) map.keySet().toArray()[0];
-				sb.append(prev_char).append(map.get(prev_char));
-				map.clear();
-				map.put(str.charAt(i), 1);
-			} else {
-				int counter = map.get(str.charAt(i)) + 1;
-				map.put(str.charAt(i), counter);
+		for (String str : input_strings) {
+			int len = str.length();
+			StringBuilder sb = new StringBuilder();
+			Map<Character, Integer> map = new HashMap<>(1);
+	
+			for (int i=0; i<len; i++) {
+				if(map.get(str.charAt(i)) == null && map.isEmpty()) {
+					map.put(str.charAt(i), 1);
+				} else if (map.get(str.charAt(i)) == null && !map.isEmpty()){
+					char prev_char = (char) map.keySet().toArray()[0];
+					sb.append(map.get(prev_char)).append(prev_char);
+					map.clear();
+					map.put(str.charAt(i), 1);
+				} else {
+					int counter = map.get(str.charAt(i)) + 1;
+					map.put(str.charAt(i), counter);
+				}
 			}
+			
+			char prev_char = (char) map.keySet().toArray()[0];
+			sb.append(map.get(prev_char)).append(prev_char);
+			
+			list[n_cnt++] = sb.toString();
 		}
 		
-		char prev_char = (char) map.keySet().toArray()[0];
-		sb.append(prev_char).append(map.get(prev_char));
+		return list;
+	}
+	
+	public static void main(String[] args) {
+		String[] inp = new String[] {"12", "21"};
+		String[] out = compress(inp);
 		
-		if(str.length() <= sb.toString().length()) return str;
-		return sb.toString();
+		for (String s : out) {
+			System.out.println(s);
+		}
 	}
 }

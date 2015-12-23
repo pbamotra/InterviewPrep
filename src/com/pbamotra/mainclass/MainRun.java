@@ -9,10 +9,18 @@ import com.pbamotra.ctci.StringCompress;
 import com.pbamotra.ctci.URLify;
 import com.pbamotra.ctci.UniqueStringChars;
 import com.pbamotra.ctci.ZeroMatrix;
+import com.pbamotra.eopi.ArbitraryPrecisionInteger;
+import com.pbamotra.eopi.DeleteKey;
+import com.pbamotra.eopi.DutchFlag;
+import com.pbamotra.eopi.LongestContinuousSameArray;
+import com.pbamotra.eopi.RemoveDuplicates;
+import com.pbamotra.eopi.Sqrt;
+import com.pbamotra.eopi.StockProfitOnce;
 
 public class MainRun {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
+		
 		// Q1.1 Check if a string has unique characters
 		UniqueStringChars usc = new UniqueStringChars();
 		
@@ -39,5 +47,27 @@ public class MainRun {
 		
 		// Q1.9 Check string rotation
 		CheckStringRotation csr = new CheckStringRotation();
+		
+		// P6.1 Dutch Flag partition
+		DutchFlag df = new DutchFlag();
+		
+		// P6.2 Arbitrary precision int increment
+		ArbitraryPrecisionInteger api = new ArbitraryPrecisionInteger();
+		
+		// P6.5 Delete key from array
+		DeleteKey dk = new DeleteKey();
+		
+		// P6.6 Remove duplicates
+		RemoveDuplicates rdk = new RemoveDuplicates();
+		
+		// P6.7 Buy and sell stock once
+		StockProfitOnce spo = new StockProfitOnce();
+		
+		// P6.7.1 Best subarray with equal elements
+		LongestContinuousSameArray lcsa = new LongestContinuousSameArray();
+		
+		// SQRT
+		Sqrt sqrt = new Sqrt();
+		System.out.println(sqrt.calculate(3));
 	}
 }
