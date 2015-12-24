@@ -1,4 +1,4 @@
-package com.pbamotra.ctci;
+package com.pbamotra.ctci.arrays;
 
 public class OneEditAway {
 	public boolean checkOneEditAway(String str1, String str2) {

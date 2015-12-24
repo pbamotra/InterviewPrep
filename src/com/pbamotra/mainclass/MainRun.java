@@ -1,32 +1,32 @@
 package com.pbamotra.mainclass;
 
-import java.util.List;
-
 import com.pbamotra.basic.BinarySearch;
-import com.pbamotra.ctci.CheckPalindromePermutation;
-import com.pbamotra.ctci.CheckStringPermutation;
-import com.pbamotra.ctci.CheckStringRotation;
-import com.pbamotra.ctci.OneEditAway;
-import com.pbamotra.ctci.RotateMatrix;
-import com.pbamotra.ctci.StringCompress;
-import com.pbamotra.ctci.URLify;
-import com.pbamotra.ctci.UniqueStringChars;
-import com.pbamotra.ctci.ZeroMatrix;
-import com.pbamotra.eopi.ArbitraryPrecisionInteger;
-import com.pbamotra.eopi.DeleteKey;
-import com.pbamotra.eopi.DutchFlag;
-import com.pbamotra.eopi.GenerateNextPermutation;
-import com.pbamotra.eopi.GeneratePermutations;
-import com.pbamotra.eopi.GeneratePrimes;
-import com.pbamotra.eopi.LongestContinuousSameArray;
-import com.pbamotra.eopi.RemoveDuplicates;
-import com.pbamotra.eopi.Sqrt;
-import com.pbamotra.eopi.StockProfit2Times;
-import com.pbamotra.eopi.StockProfitOnce;
-import com.pbamotra.leetcode.FourSum;
-import com.pbamotra.leetcode.InsertPosition;
-import com.pbamotra.leetcode.MatrixSearch2D;
-import com.pbamotra.leetcode.ThreeSum;
+import com.pbamotra.ctci.arrays.CheckPalindromePermutation;
+import com.pbamotra.ctci.arrays.CheckStringPermutation;
+import com.pbamotra.ctci.arrays.CheckStringRotation;
+import com.pbamotra.ctci.arrays.OneEditAway;
+import com.pbamotra.ctci.arrays.RotateMatrix;
+import com.pbamotra.ctci.arrays.StringCompress;
+import com.pbamotra.ctci.arrays.URLify;
+import com.pbamotra.ctci.arrays.UniqueStringChars;
+import com.pbamotra.ctci.arrays.ZeroMatrix;
+import com.pbamotra.eopi.arrays.ArbitraryPrecisionInteger;
+import com.pbamotra.eopi.arrays.DeleteKey;
+import com.pbamotra.eopi.arrays.DutchFlag;
+import com.pbamotra.eopi.arrays.GenerateNextPermutation;
+import com.pbamotra.eopi.arrays.GeneratePermutations;
+import com.pbamotra.eopi.arrays.GeneratePrimes;
+import com.pbamotra.eopi.arrays.LongestContinuousSameArray;
+import com.pbamotra.eopi.arrays.RemoveDuplicates;
+import com.pbamotra.eopi.arrays.Sqrt;
+import com.pbamotra.eopi.arrays.StockProfit2Times;
+import com.pbamotra.eopi.arrays.StockProfitOnce;
+import com.pbamotra.leetcode.arrays.FourSum;
+import com.pbamotra.leetcode.arrays.InsertPosition;
+import com.pbamotra.leetcode.arrays.MatrixSearch2D;
+import com.pbamotra.leetcode.arrays.MaxProductSubarray;
+import com.pbamotra.leetcode.arrays.MaxSumSubarray;
+import com.pbamotra.leetcode.arrays.ThreeSum;
 
 public class MainRun {
 	@SuppressWarnings("unused")
@@ -106,10 +106,13 @@ public class MainRun {
 		
 		// Leetcode 18: 4Sum
 		FourSum fs = new FourSum();
-		int[] nums = new int[] {1, 0 ,-1, 0, -2, 2};
-		List<List<Integer>> lists = fs.find(nums, 0);
-		for(List<Integer> list : lists) {
-			System.out.println(list);
-		}
+		
+		// Leetcode 53: Max subset sum
+		MaxSumSubarray mss = new MaxSumSubarray();
+		
+		// Leetcode 152: Max product subarray
+		MaxProductSubarray mps = new MaxProductSubarray();
+		int[] arr = new int[] {-2,1,-3,4,-1,2,1,-5,4};
+		System.out.println(mps.findMaxProduct(arr));
 	}
 }

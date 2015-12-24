@@ -1,4 +1,4 @@
-package com.pbamotra.eopi;
+package com.pbamotra.eopi.arrays;
 
 public class GenerateNextPermutation {
 	public void nextPermutation(int[] permutation) {

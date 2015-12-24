@@ -1,4 +1,4 @@
-package com.pbamotra.ctci;
+package com.pbamotra.ctci.arrays;
 
 public class RotateMatrix {
 	public void rotate(int[][] mat) {

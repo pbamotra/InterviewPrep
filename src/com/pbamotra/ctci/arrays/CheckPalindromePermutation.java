@@ -1,4 +1,4 @@
-package com.pbamotra.ctci;
+package com.pbamotra.ctci.arrays;
 
 import java.util.BitSet;
 

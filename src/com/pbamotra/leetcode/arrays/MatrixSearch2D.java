@@ -1,4 +1,4 @@
-package com.pbamotra.leetcode;
+package com.pbamotra.leetcode.arrays;
 
 public class MatrixSearch2D {
 	private boolean binSearch(int[] arr, int target) {

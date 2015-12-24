@@ -1,4 +1,4 @@
-package com.pbamotra.leetcode;
+package com.pbamotra.leetcode.arrays;
 
 public class InsertPosition {
 	public int search(int[] A, int target,int start, int end) {

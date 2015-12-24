@@ -1,4 +1,4 @@
-package com.pbamotra.eopi;
+package com.pbamotra.eopi.arrays;
 
 public class StockProfitOnce {
 	public int maxProfit(int[] arr) {

@@ -1,4 +1,4 @@
-package com.pbamotra.eopi;
+package com.pbamotra.eopi.arrays;
 
 import java.util.ArrayList;
 import java.util.List;

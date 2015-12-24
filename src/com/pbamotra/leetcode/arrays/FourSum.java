@@ -1,4 +1,4 @@
-package com.pbamotra.leetcode;
+package com.pbamotra.leetcode.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;

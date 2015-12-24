@@ -1,4 +1,4 @@
-package com.pbamotra.ctci;
+package com.pbamotra.ctci.arrays;
 
 // Not a very good question to attempt
 public class URLify {

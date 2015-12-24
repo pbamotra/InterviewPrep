@@ -1,4 +1,4 @@
-package com.pbamotra.ctci;
+package com.pbamotra.ctci.arrays;
 
 public class CheckStringPermutation {
 	public boolean isPermutation(String str1, String str2) {
