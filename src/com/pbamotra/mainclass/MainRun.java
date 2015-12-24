@@ -1,5 +1,8 @@
 package com.pbamotra.mainclass;
 
+import java.util.List;
+
+import com.pbamotra.basic.BinarySearch;
 import com.pbamotra.ctci.CheckPalindromePermutation;
 import com.pbamotra.ctci.CheckStringPermutation;
 import com.pbamotra.ctci.CheckStringRotation;
@@ -18,8 +21,12 @@ import com.pbamotra.eopi.GeneratePrimes;
 import com.pbamotra.eopi.LongestContinuousSameArray;
 import com.pbamotra.eopi.RemoveDuplicates;
 import com.pbamotra.eopi.Sqrt;
-import com.pbamotra.eopi.StockProfitNTimes;
+import com.pbamotra.eopi.StockProfit2Times;
 import com.pbamotra.eopi.StockProfitOnce;
+import com.pbamotra.leetcode.FourSum;
+import com.pbamotra.leetcode.InsertPosition;
+import com.pbamotra.leetcode.MatrixSearch2D;
+import com.pbamotra.leetcode.ThreeSum;
 
 public class MainRun {
 	@SuppressWarnings("unused")
@@ -73,8 +80,8 @@ public class MainRun {
 		// SQRT
 		Sqrt sqrt = new Sqrt();
 		
-		// P6.8 Buy and Sell multiple
-		StockProfitNTimes spnt = new StockProfitNTimes();
+		// P6.8 Buy and Sell 2x
+		StockProfit2Times spnt = new StockProfit2Times();
 		
 		// P6.9 Generate N Prime number
 		GeneratePrimes gp = new GeneratePrimes();
@@ -84,5 +91,25 @@ public class MainRun {
 		
 		// P6.11 Next Permutation
 		GenerateNextPermutation gnp = new GenerateNextPermutation();
+		
+		// Basic 1: Binary search
+		BinarySearch bs = new  BinarySearch();
+		
+		// Leetcode 15: 3Sum
+		ThreeSum ts = new ThreeSum();
+		
+		// Leetcode 35: Insert position
+		InsertPosition ip = new InsertPosition();
+		
+		// Leetcode 74: Matrix search 2-D
+		MatrixSearch2D m2d = new MatrixSearch2D();
+		
+		// Leetcode 18: 4Sum
+		FourSum fs = new FourSum();
+		int[] nums = new int[] {1, 0 ,-1, 0, -2, 2};
+		List<List<Integer>> lists = fs.find(nums, 0);
+		for(List<Integer> list : lists) {
+			System.out.println(list);
+		}
 	}
 }
