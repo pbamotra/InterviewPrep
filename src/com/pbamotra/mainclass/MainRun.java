@@ -21,6 +21,13 @@ import com.pbamotra.eopi.arrays.RemoveDuplicates;
 import com.pbamotra.eopi.arrays.Sqrt;
 import com.pbamotra.eopi.arrays.StockProfit2Times;
 import com.pbamotra.eopi.arrays.StockProfitOnce;
+import com.pbamotra.eopi.trees.CheckBalancedBinaryTree;
+import com.pbamotra.eopi.trees.CheckBinaryTreeSymmetric;
+import com.pbamotra.eopi.trees.InOrderTraversal;
+import com.pbamotra.eopi.trees.LevelOrderTraversal;
+import com.pbamotra.eopi.trees.PostOrderTraversal;
+import com.pbamotra.eopi.trees.PreOrderTraversal;
+import com.pbamotra.eopi.trees.TreeSort;
 import com.pbamotra.leetcode.arrays.FourSum;
 import com.pbamotra.leetcode.arrays.InsertPosition;
 import com.pbamotra.leetcode.arrays.MatrixSearch2D;
@@ -112,7 +119,28 @@ public class MainRun {
 		
 		// Leetcode 152: Max product subarray
 		MaxProductSubarray mps = new MaxProductSubarray();
-		int[] arr = new int[] {-2,1,-3,4,-1,2,1,-5,4};
-		System.out.println(mps.findMaxProduct(arr));
+		
+		// Level-Order traversal
+		LevelOrderTraversal lot = new LevelOrderTraversal();
+		
+		// In-order traversal
+		InOrderTraversal io = new InOrderTraversal();
+		
+		// BST Sort O(nlogn)
+		TreeSort tso = new TreeSort();
+		
+		// Post-order traversal
+		PostOrderTraversal pot = new PostOrderTraversal();
+		
+		// Pre-order traversal
+		PreOrderTraversal prot = new PreOrderTraversal();
+		
+		// P10.1 Check Binary tree is balanced
+		CheckBalancedBinaryTree cbbt = new CheckBalancedBinaryTree();
+		
+		// P10.2 Check Binary tree is symmetric
+		CheckBinaryTreeSymmetric cbts = new CheckBinaryTreeSymmetric();
+		
+		
 	}
 }
