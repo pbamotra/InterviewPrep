@@ -23,7 +23,10 @@ import com.pbamotra.eopi.arrays.StockProfit2Times;
 import com.pbamotra.eopi.arrays.StockProfitOnce;
 import com.pbamotra.eopi.trees.CheckBalancedBinaryTree;
 import com.pbamotra.eopi.trees.CheckBinaryTreeSymmetric;
+import com.pbamotra.eopi.trees.HasPathSum;
 import com.pbamotra.eopi.trees.InOrderTraversal;
+import com.pbamotra.eopi.trees.LCA_BST;
+import com.pbamotra.eopi.trees.LCA_BinaryTree;
 import com.pbamotra.eopi.trees.LevelOrderTraversal;
 import com.pbamotra.eopi.trees.PostOrderTraversal;
 import com.pbamotra.eopi.trees.PreOrderTraversal;
@@ -141,6 +144,13 @@ public class MainRun {
 		// P10.2 Check Binary tree is symmetric
 		CheckBinaryTreeSymmetric cbts = new CheckBinaryTreeSymmetric();
 		
+		// P10.3 LCA binary tree
+		LCA_BinaryTree lbt = new LCA_BinaryTree();
 		
+		// P10.3.1 LCA BST
+		LCA_BST lbst = new LCA_BST();
+		
+		// P10.6 Has Path sum = target
+		HasPathSum hps = new HasPathSum();
 	}
 }

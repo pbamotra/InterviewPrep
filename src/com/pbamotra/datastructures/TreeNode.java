@@ -1,5 +1,7 @@
 package com.pbamotra.datastructures;
 
+import com.pbamotra.eopi.trees.LevelOrderTraversal;
+
 public class TreeNode {
 	public int value;
 	public TreeNode left;
@@ -36,5 +38,10 @@ public class TreeNode {
 	public String getStatus() {
 		if(this.isVisited) return "Y";
 		return "N";
+	}
+	
+	public void print() {
+		LevelOrderTraversal lot = new LevelOrderTraversal();
+		lot.print(this);
 	}
 }
