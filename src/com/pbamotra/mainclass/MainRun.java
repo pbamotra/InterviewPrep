@@ -1,6 +1,7 @@
 package com.pbamotra.mainclass;
 
 import com.pbamotra.basic.BinarySearch;
+import com.pbamotra.basic.TreeHeight;
 import com.pbamotra.ctci.arrays.CheckPalindromePermutation;
 import com.pbamotra.ctci.arrays.CheckStringPermutation;
 import com.pbamotra.ctci.arrays.CheckStringRotation;
@@ -21,8 +22,10 @@ import com.pbamotra.eopi.arrays.RemoveDuplicates;
 import com.pbamotra.eopi.arrays.Sqrt;
 import com.pbamotra.eopi.arrays.StockProfit2Times;
 import com.pbamotra.eopi.arrays.StockProfitOnce;
+import com.pbamotra.eopi.trees.CheckBST;
 import com.pbamotra.eopi.trees.CheckBalancedBinaryTree;
 import com.pbamotra.eopi.trees.CheckBinaryTreeSymmetric;
+import com.pbamotra.eopi.trees.FindKeyBST;
 import com.pbamotra.eopi.trees.HasPathSum;
 import com.pbamotra.eopi.trees.InOrderTraversal;
 import com.pbamotra.eopi.trees.LCA_BST;
@@ -31,6 +34,7 @@ import com.pbamotra.eopi.trees.LevelOrderTraversal;
 import com.pbamotra.eopi.trees.PostOrderTraversal;
 import com.pbamotra.eopi.trees.PreOrderTraversal;
 import com.pbamotra.eopi.trees.TreeSort;
+import com.pbamotra.leetcode.arrays.FindKthLargest;
 import com.pbamotra.leetcode.arrays.FourSum;
 import com.pbamotra.leetcode.arrays.InsertPosition;
 import com.pbamotra.leetcode.arrays.MatrixSearch2D;
@@ -147,10 +151,22 @@ public class MainRun {
 		// P10.3 LCA binary tree
 		LCA_BinaryTree lbt = new LCA_BinaryTree();
 		
-		// P10.3.1 LCA BST
+		// P15.5 LCA BST
 		LCA_BST lbst = new LCA_BST();
 		
 		// P10.6 Has Path sum = target
 		HasPathSum hps = new HasPathSum();
+		
+		// P15.1 Check BST property
+		CheckBST cbst = new CheckBST();
+		
+		// P15.2 Find key
+		FindKeyBST fkbst = new FindKeyBST();
+		
+		// Leetcode: Find Kth largest element in array
+		FindKthLargest fkl = new FindKthLargest();
+		
+		// Find tree height
+		TreeHeight th = new TreeHeight();
 	}
 }

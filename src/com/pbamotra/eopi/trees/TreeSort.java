@@ -4,7 +4,7 @@ import com.pbamotra.datastructures.TreeNode;
 
 public class TreeSort {
 
-	public void sort(int[] nums) {
+	public static void sort(int[] nums) {
 		
 		TreeNode root = null;
 		for(int num : nums) {
@@ -12,7 +12,7 @@ public class TreeSort {
 		}
 		
 		InOrderTraversal iot = new InOrderTraversal();
-		iot.print3(root);
+		iot.reverseOrder(root);
 	}
 	
 	public static TreeNode insertBST(TreeNode root, int obj) {
@@ -29,15 +29,8 @@ public class TreeSort {
 		return root;
 	}
 	
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		int[] arr = new int[] {0, 1, 1, -1, -99, 1, 4, 1, 90, 100, 4};
-		
-		long start = System.currentTimeMillis();
-		long i=0;
-		for(; i<100000000; i++) {
-			sort(arr);
-		}
-		System.out.println("i was " + i );
-		System.out.println("It took " + (System.currentTimeMillis() - start) + "msec");
-	}*/
+		sort(arr);
+	}
 }

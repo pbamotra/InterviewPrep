@@ -38,8 +38,8 @@ public class InOrderTraversal {
 
 		Stack<TreeNode> s = new Stack<>();
 		TreeNode node = root;
-		
-		while(node != null) {
+
+		while (node != null) {
 			s.push(node);
 			node = node.left;
 		}
@@ -48,10 +48,10 @@ public class InOrderTraversal {
 			// System.out.println(s);
 			TreeNode top = s.pop();
 			System.out.println(top.value + " ");
-			
-			if(top.hasRightChild()) {
+
+			if (top.hasRightChild()) {
 				node = top.right;
-				while(node != null) {
+				while (node != null) {
 					s.push(node);
 					node = node.left;
 				}
@@ -60,13 +60,25 @@ public class InOrderTraversal {
 	}
 
 	public void print3(TreeNode root) {
-		if(root != null) {
-				if(root.hasLeftChild()) print3(root.left);
-				System.out.println(root.value + " ");
-				if(root.hasRightChild()) print3(root.right);
+		if (root != null) {
+			if (root.hasLeftChild())
+				print3(root.left);
+			System.out.println(root.value + " ");
+			if (root.hasRightChild())
+				print3(root.right);
 		}
 	}
-	
+
+	public void reverseOrder(TreeNode root) {
+		if (root != null) {
+			if (root.hasRightChild())
+				print3(root.right);
+			System.out.println(root.value + " ");
+			if (root.hasLeftChild())
+				print3(root.left);
+		}
+	}
+
 	/*public static void main(String[] args) {
 		TreeNode root = new TreeNode(0);
 
@@ -86,6 +98,6 @@ public class InOrderTraversal {
 
 		print3(root);
 		System.out.println();
-		//print2(root);
+		// print2(root);
 	}*/
 }
