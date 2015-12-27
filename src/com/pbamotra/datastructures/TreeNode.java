@@ -40,6 +40,10 @@ public class TreeNode {
 		return "N";
 	}
 	
+	public boolean isLeaf() {
+		return this != null && this.left == null && this.right == null;
+	}
+	
 	public void print() {
 		LevelOrderTraversal lot = new LevelOrderTraversal();
 		lot.print(this);

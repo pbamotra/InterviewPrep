@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class WordLadder {
 	
-	private static class WordNode {
+	private class WordNode {
 		String word;
 		int pathLen;
 		
@@ -17,7 +17,8 @@ public class WordLadder {
 			this.pathLen = l;
 		}
 	}
-	public static int length(String start, String end, Set<String> dict) {
+	
+	public  int length(String start, String end, Set<String> dict) {
 		
 		Queue<WordNode> q = new LinkedList<WordNode>();
 		q.add(new WordNode(start, 1));
@@ -51,12 +52,5 @@ public class WordLadder {
 		}
 		
 		return 0;
-	}
-	
-	public static void main(String[] args) {
-		Set<String> dict = new HashSet<>(Arrays.asList(new String[] {"hot","dot","dog","lot","log"}));
-		String start = "hit", end = "mog";
-		
-		System.out.println("Length of word ladder is " + length(start, end, dict));
 	}
 }
