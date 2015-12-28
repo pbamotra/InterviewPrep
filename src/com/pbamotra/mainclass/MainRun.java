@@ -1,7 +1,5 @@
 package com.pbamotra.mainclass;
 
-import java.util.Scanner;
-
 import com.pbamotra.basic.BinarySearch;
 import com.pbamotra.basic.TreeHeight;
 import com.pbamotra.ctci.arrays.CheckPalindromePermutation;
@@ -24,6 +22,7 @@ import com.pbamotra.eopi.arrays.RemoveDuplicates;
 import com.pbamotra.eopi.arrays.Sqrt;
 import com.pbamotra.eopi.arrays.StockProfit2Times;
 import com.pbamotra.eopi.arrays.StockProfitOnce;
+import com.pbamotra.eopi.dp.Knapsack;
 import com.pbamotra.eopi.trees.CheckBST;
 import com.pbamotra.eopi.trees.CheckBalancedBinaryTree;
 import com.pbamotra.eopi.trees.CheckBinaryTreeSymmetric;
@@ -175,27 +174,7 @@ public class MainRun {
 		// Leetcode 127: Word ladder
 		WordLadder wl = new WordLadder();
 		
-		Scanner in = new Scanner(System.in);
-		int n_op = in.nextInt();
-		in.nextLine();
-		
-		System.out.println();
-		
-		while(in.hasNext()) {
-			String currLine = in.nextLine();
-			String[] currLineSplit = currLine.split(" ");
-			switch(currLineSplit[0].trim()) {
-				case "1":
-					int push_val = Integer.valueOf(currLineSplit[1]);
-					System.out.println("Push " + push_val);
-					break;
-				case "2":
-					System.out.println("Pop");
-					break;
-				case "3":
-					System.out.println("Find Max");
-					break;
-			}
-		}
+		// P17.6 Knapsack problem
+		Knapsack ks = new Knapsack();
 	}
 }
