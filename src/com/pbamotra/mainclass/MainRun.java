@@ -1,7 +1,5 @@
 package com.pbamotra.mainclass;
 
-import com.pbamotra.basic.BinarySearch;
-import com.pbamotra.basic.TreeHeight;
 import com.pbamotra.ctci.arrays.CheckPalindromePermutation;
 import com.pbamotra.ctci.arrays.CheckStringPermutation;
 import com.pbamotra.ctci.arrays.CheckStringRotation;
@@ -11,6 +9,8 @@ import com.pbamotra.ctci.arrays.StringCompress;
 import com.pbamotra.ctci.arrays.URLify;
 import com.pbamotra.ctci.arrays.UniqueStringChars;
 import com.pbamotra.ctci.arrays.ZeroMatrix;
+import com.pbamotra.ctci.recursion.BalancedBrackets;
+import com.pbamotra.ctci.recursion.CoinChangeWayRec;
 import com.pbamotra.eopi.arrays.ArbitraryPrecisionInteger;
 import com.pbamotra.eopi.arrays.DeleteKey;
 import com.pbamotra.eopi.arrays.DutchFlag;
@@ -22,7 +22,9 @@ import com.pbamotra.eopi.arrays.RemoveDuplicates;
 import com.pbamotra.eopi.arrays.Sqrt;
 import com.pbamotra.eopi.arrays.StockProfit2Times;
 import com.pbamotra.eopi.arrays.StockProfitOnce;
+import com.pbamotra.eopi.dp.CoinChange;
 import com.pbamotra.eopi.dp.Knapsack;
+import com.pbamotra.eopi.dp.LongestIncreasingSubsequence;
 import com.pbamotra.eopi.trees.CheckBST;
 import com.pbamotra.eopi.trees.CheckBalancedBinaryTree;
 import com.pbamotra.eopi.trees.CheckBinaryTreeSymmetric;
@@ -35,6 +37,10 @@ import com.pbamotra.eopi.trees.LevelOrderTraversal;
 import com.pbamotra.eopi.trees.PostOrderTraversal;
 import com.pbamotra.eopi.trees.PreOrderTraversal;
 import com.pbamotra.eopi.trees.TreeSort;
+import com.pbamotra.geeks4geeks.BinarySearch;
+import com.pbamotra.geeks4geeks.CoinChangeWaysDP;
+import com.pbamotra.geeks4geeks.LongestIncreasingSubarray;
+import com.pbamotra.geeks4geeks.TreeHeight;
 import com.pbamotra.leetcode.arrays.FindKthLargest;
 import com.pbamotra.leetcode.arrays.FourSum;
 import com.pbamotra.leetcode.arrays.InsertPosition;
@@ -176,5 +182,24 @@ public class MainRun {
 		
 		// P17.6 Knapsack problem
 		Knapsack ks = new Knapsack();
+		
+		// P17.1 Maximum subarray
+		LongestIncreasingSubsequence lis = new LongestIncreasingSubsequence();
+		
+		// 8.9 Balanced parenthesis
+		BalancedBrackets bb = new BalancedBrackets();
+		
+		// 8.11 Coin change ways recursion
+		CoinChangeWayRec ccwr = new CoinChangeWayRec();
+		
+		// 8.11.1 Coin change ways DP
+		CoinChangeWaysDP ccwdp = new CoinChangeWaysDP();
+		
+		// Min coins needed to compute target
+		CoinChange cc = new CoinChange();
+		
+		// Geeks4Geeks Longest Increasing Subarray
+		LongestIncreasingSubarray l_inc_s = new LongestIncreasingSubarray();
+
 	}
 }

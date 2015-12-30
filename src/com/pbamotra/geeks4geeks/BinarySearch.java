@@ -1,4 +1,4 @@
-package com.pbamotra.basic;
+package com.pbamotra.geeks4geeks;
 
 import java.util.Arrays;
 
