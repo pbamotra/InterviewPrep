@@ -25,6 +25,11 @@ import com.pbamotra.eopi.arrays.StockProfitOnce;
 import com.pbamotra.eopi.dp.CoinChange;
 import com.pbamotra.eopi.dp.Knapsack;
 import com.pbamotra.eopi.dp.LongestIncreasingSubsequence;
+import com.pbamotra.eopi.linkedlist.EvenOddMerge;
+import com.pbamotra.eopi.linkedlist.FindCycle;
+import com.pbamotra.eopi.linkedlist.MergeSortedLL;
+import com.pbamotra.eopi.linkedlist.PivotPartitionLL;
+import com.pbamotra.eopi.linkedlist.ReverseLL;
 import com.pbamotra.eopi.trees.CheckBST;
 import com.pbamotra.eopi.trees.CheckBalancedBinaryTree;
 import com.pbamotra.eopi.trees.CheckBinaryTreeSymmetric;
@@ -200,6 +205,20 @@ public class MainRun {
 		
 		// Geeks4Geeks Longest Increasing Subarray
 		LongestIncreasingSubarray l_inc_s = new LongestIncreasingSubarray();
-
+		
+		// P8.1 Merge sorted Linked List
+		MergeSortedLL msll = new MergeSortedLL();
+		
+		// P8.2 Reverse Linked List
+		ReverseLL rll = new ReverseLL();
+		
+		// P8.3 Find cycle
+		FindCycle fc = new FindCycle();
+		
+		// P8.11 Even Odd Merge
+		EvenOddMerge eom = new EvenOddMerge();
+		
+		// P8.13 Pivot partition LL
+		PivotPartitionLL ppll = new PivotPartitionLL();
 	}
 }

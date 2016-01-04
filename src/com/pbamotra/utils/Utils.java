@@ -1,5 +1,7 @@
 package com.pbamotra.utils;
 
+import com.pbamotra.datastructures.ListNode;
+
 public class Utils {
 	public static int min(int[] arr) {
 		if(arr.length == 0) throw new IllegalArgumentException("Invalid argument passed");
@@ -23,5 +25,13 @@ public class Utils {
 		}
 		
 		return max;
+	}
+	
+	public static <T> void printList(ListNode<T> head) {
+		ListNode<T> dummy = head;
+		while(dummy != null) {
+			System.out.print(dummy.value + " ");
+			dummy = dummy.next;
+		}
 	}
 }
